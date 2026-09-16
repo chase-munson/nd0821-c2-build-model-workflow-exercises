@@ -1,12 +1,30 @@
-# Build a Reproducible Model Workflow - Exercises
+# ML DevOps Nanodegree — Course 2: Build a Reproducible Model Workflow (Exercises)
 
-This repo contains the code for demos, exercises, and exercise solutions.
+Completed exercises and demos for Udacity's ML DevOps Engineer Nanodegree,
+Course 2. This is Udacity's own course content — the instructions, starter
+code, and demos are theirs (see `LICENSE.md`); this fork holds my completed
+exercise solutions on top of it.
 
-This repository organizes the code by the lessons that they are used in. Each set of code is located in their respective lessons.
+## What's here
 
-Please note that certain instructions for each exercise, as well as any relevant environment setup, are only provided within the Udacity classroom.
+Code is organized by the lesson it belongs to:
 
-## Example:
-All lesson 2 files are in `/lesson-2-data-exploration-and-preparation/`.
+- **`lesson-1-machine-learning-pipelines/`** — intro to structuring an ML
+  project as a pipeline of independent, reusable steps.
+- **`lesson-2-data-exploration-and-preparation/`** — exploring and cleaning
+  a raw dataset before it's fit to train on. Exercise 4 in this lesson uses
+  a music-genre dataset that I later built out into a full standalone
+  pipeline — see my `genre_classification` repo.
+- **`lesson-3-data-validation/`** — automated checks (schema, statistical
+  tests) that gate bad data out of a pipeline before it reaches training.
+- **`lesson-4-training-validation-experiment-tracking/`** — training models
+  inside the pipeline and tracking every run's parameters, metrics, and
+  artifacts.
+- **`lesson-5-final-pipeline-release-and-deploy/`** — tagging a pipeline
+  version as a release and running it directly from its Git repository.
 
-This directory contains: `demo`, `exercises`, with the `exercises` directory organized by the exercise number, and therein containing an exercise `README.md` file and `starter` and `solution` directories.
+Each lesson folder contains a `demo/` and an `exercises/` directory; each
+exercise has its own `README.md`, plus `starter/` and `solution/`
+subdirectories. Some exercise-specific setup (API keys, environment
+variables) is only described in the Udacity classroom, per the original
+course instructions.
